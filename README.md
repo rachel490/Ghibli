@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ghibli Fan Page
 
-## Getting Started
+## Project Info
+- 개발기간 : 10/1 - 
+- 기술스택 : Next.js, React 18, Typescript, Emotion, GraphQL, Public API (giphy, shazam), Tanstack Query
+- 프로젝트 목표 : 
+	- grapqhl api를 만들고 클라이언트에서 활용
+	- graphql api와 rest api를 같이 사용
+	- next.js를 이용하여 ssr, isr, csr을 적절히 사용
+	- 성능 최적화 경험 쌓기
+- 주요 기능 : 
+	- 지브리 스튜디오 영화 모두 보여주기
+	- 검색기능
+	- 정렬 : 최신순, 오래된순
+	- 지브리 배경음악 (mute, 정지, 다음곡, 이전곡, 플레이리스트 닫기 및 열기)
+	- 각 영화에 대한 정보 렌더
+		- 기본정보
+		- 캐릭터
+		- 영화 관련 gif (giphy)
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
