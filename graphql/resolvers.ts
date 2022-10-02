@@ -9,6 +9,22 @@ import {
 } from "./api";
 
 const resolvers = {
+  Film: {
+    people: (parent: any) => {
+      return parent.people.map(async (person: string) => {
+        const person_id = person.split("people/")[1];
+        const person_data = await axios.get(PERSON_API(person_id));
+        return person_data.data;
+      });
+    },
+    species: (parent: any) => {
+      return parent.species.map(async (species: string) => {
+        const species_id = species.split("species/")[1];
+        const species_data = await axios.get(SPECIES_API(species_id));
+        return species_data.data;
+      });
+    },
+  },
   Query: {
     films: async () => {
       const res = await axios.get(FILMS_API);

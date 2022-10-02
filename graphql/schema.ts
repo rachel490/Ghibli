@@ -14,8 +14,8 @@ const typeDefs = gql`
     release_date: String
     running_time: String
     rt_score: String
-    people: [String]
-    species: [String]
+    people: [Person]
+    species: [Species]
     locations: [String]
     vehicles: [String]
     url: String
