@@ -1,4 +1,4 @@
-const BASE_URL = "https://ghibliapi.herokuapp.com";
+const BASE_URL = "https://ghibli-api.vercel.app/api";
 
 export const FILMS_API = `${BASE_URL}/films`;
 export const FILM_API = (id: string) => `${BASE_URL}/films/${id}`;
