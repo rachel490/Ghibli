@@ -56,7 +56,7 @@ function GalleryPage() {
   const {
     query: { filmId },
   } = useRouter();
-  const [imageId, setImageId] = useState(50);
+  const [imageId, setImageId] = useState(1);
 
   const { data, loading, error } = useQuery<IFilm>(GET_FILM, {
     variables: { filmId },
