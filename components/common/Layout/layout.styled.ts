@@ -8,5 +8,5 @@ export const Wrap = styled.div`
 
 export const ContentWrap = styled.div`
   width: 750px;
-  margin: 0 auto;
+  margin: 10px auto 50px auto;
 `;
