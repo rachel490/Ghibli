@@ -3,6 +3,7 @@ import * as S from "./cardList.styled";
 
 import { gql, useQuery } from "@apollo/client";
 import Link from "next/link";
+import Spinner from "../Spinner/Spinner";
 
 interface IFilmList {
   films: {
@@ -25,8 +26,7 @@ const GET_FILM_LIST = gql`
 const CardList = () => {
   const { data, loading, error } = useQuery<IFilmList>(GET_FILM_LIST);
 
-  if (loading) return <h1>Loading..</h1>;
-  if (error) return <h1>Error..</h1>;
+  if (loading) return <Spinner />;
 
   return (
     <S.Wrap>
