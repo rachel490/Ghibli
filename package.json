@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.15",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@giphy/js-fetch-api": "^4.9.2",
+    "@giphy/react-components": "^6.9.4",
     "@types/micro-cors": "^0.1.2",
     "apollo-server-micro": "^3.10.2",
     "axios": "^0.27.2",
